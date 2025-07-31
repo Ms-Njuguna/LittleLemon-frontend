@@ -6,7 +6,7 @@ function Navbar() {
     const { isAuthenticated, user } = useAuth();
 
     return (
-        <nav className="bg-[#EDEFEE] px-60 pt-4 pb-4 flex justify-between items-center shadow-[0_4px_10px_rgba(0,0,0,0.05)] fixed top-0 left-0 right-0 z-50">
+        <nav className="bg-[#EDEFEE] px-80 pt-4 pb-4 flex justify-between items-center shadow-[0_4px_10px_rgba(0,0,0,0.05)] fixed top-0 left-0 right-0 z-50">
             {/* logo section */}
             <div>
                 <Link to="/">
@@ -16,18 +16,18 @@ function Navbar() {
 
             {/* nav links */}
             <div className="md:flex gap-10 font-body text-[rgb(73,94,87)] text-[16px]">
-                <Link to="/about" className="hover:text-[#F4CE14]">About</Link>
-                <Link to="/reservation" className="hover:text-[#F4CE14]">Reservations</Link>
-                <Link to="/menu" className="hover:text-[#F4CE14]">Order Online</Link>
+                <Link to="/about" className="hover:text-[#F4CE14] px-4 py-2">About</Link>
+                <Link to="/reservation" className="hover:text-[#F4CE14] px-4 py-2">Reservations</Link>
+                <Link to="/menu" className="hover:text-[#F4CE14] px-4 py-2">Order Online</Link>
                 {isAuthenticated ? (
-                    <Link to="/dashboard" className="hover:text-[#F4CE14]">Dashboard</Link>
+                    <Link to="/dashboard" className="hover:text-[#F4CE14] px-4 py-2">Dashboard</Link>
                 ) : (
-                    <Link to="/login" className="hover:text-[#F4CE14]">Log In</Link>
+                    <Link to="/login" className="hover:text-[#F4CE14] px-4 py-2">Log In</Link>
                 )}
             </div>
 
             {/* account and basket icons */}
-            <div className="flex gap-4">
+            <div className="flex gap-6">
                 <div className="relative">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#495E57"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg>
                     <span className="absolute bottom-4 left-5 border border-[#495E57] rounded-full px-1 text-[8px] text-[#EE9972]">0</span>
