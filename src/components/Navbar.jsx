@@ -16,13 +16,13 @@ function Navbar() {
 
             {/* nav links */}
             <div className="md:flex gap-10 font-body text-[rgb(73,94,87)] text-[16px]">
-                <Link to="/about">About</Link>
-                <Link to="/reservation">Reservations</Link>
-                <Link to="/menu">Order Online</Link>
+                <Link to="/about" className="hover:text-[#F4CE14]">About</Link>
+                <Link to="/reservation" className="hover:text-[#F4CE14]">Reservations</Link>
+                <Link to="/menu" className="hover:text-[#F4CE14]">Order Online</Link>
                 {isAuthenticated ? (
-                    <Link to="/dashboard">Dashboard</Link>
+                    <Link to="/dashboard" className="hover:text-[#F4CE14]">Dashboard</Link>
                 ) : (
-                    <Link to="/login">Log In</Link>
+                    <Link to="/login" className="hover:text-[#F4CE14]">Log In</Link>
                 )}
             </div>
 
