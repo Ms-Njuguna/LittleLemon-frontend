@@ -17,12 +17,12 @@ function HeroSection() {
             </div>
 
             {/* hero section content */}
-            <div className="relative grid grid-cols-2 items-center max-w-[1000px] mx-auto my-[-20px] px-5 gap-[50px]"> {/* Changed to mx-auto px-5 */}
+            <div className="relative grid grid-cols-2 items-center max-w-[1000px] mx-auto my-[-25px] px-5 gap-[50px]"> {/* Changed to mx-auto px-5 */}
                 <div>
-                    <h2 className="text-[40px] font-semibold text-[#F4CE14]">Little Lemon</h2>
-                    <h5 className="text-[#EDEFEE] text-[16px] font-semibold pb-6">Nairobi</h5>
-                    <p className="text-[16px] text-[#EDEFEE]">Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.</p>
-                    <button onClick={handleReserveTable} className="bg-[#F4CE14] px-4 py-2 rounded-[16px] mt-4 font-semibold text-[rgb(73,94,87)]">Reserve a table</button>
+                    <h2 className="font-markazi text-[40px] font-bold text-[#F4CE14]">Little Lemon</h2>
+                    <h5 className="font-markazi text-[#EDEFEE] text-[24px] font-semibold mt-[-15px] pb-4">Nairobi</h5>
+                    <p className="text-[18px] text-[#EDEFEE] pb-4 font-karla">Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.</p>
+                    <button onClick={handleReserveTable} className="bg-[#F4CE14] px-4 py-2 rounded-[16px] mt-4 font-bold text-[rgb(73,94,87)] font-karla">Reserve a table</button>
                 </div>
                 <div className="relative h-full"> {/* Made this container relative */}
                     <img src="src/assets/ui/restauranfood.jpg" alt="image of food" className="absolute my-[75px] right-[0px] top-1/2 -translate-y-1/2 h-[400px] w-[350px] rounded-[16px] object-cover"></img>
